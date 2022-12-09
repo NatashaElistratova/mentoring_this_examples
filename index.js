@@ -1,13 +1,13 @@
 // "use strict";
 
-const obj = {
-    prop: 'Test',
-    objMethod() {
-        console.log(this.prop);
-    }
-}
+// const obj = {
+//     prop: 'Test',
+//     objMethod() {
+//         console.log(this.prop);
+//     }
+// }
 
-obj.objMethod(); // Test
+// obj.objMethod(); // Test
 
 // Example 1
 // function sayHi() {
@@ -103,6 +103,4 @@ obj.objMethod(); // Test
 // const test = obj.prop.getFullname;
 
 // console.log(test()); // undefined
-
-
 
