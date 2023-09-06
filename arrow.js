@@ -1,3 +1,5 @@
+'use strict'
+
 let userData = {
     firstName: "Ivan",
     sayHi() {
@@ -12,7 +14,7 @@ let userData = {
 
 let userData1 = {
     firstName: "Ivan",
-    sayHi() {
+    sayHi: function() {
         function nested() {
             console.log(this.firstName);
         };
@@ -20,6 +22,6 @@ let userData1 = {
     },
 };
 
-// userData1.sayHi();
+userData1.sayHi();
 
 

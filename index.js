@@ -1,3 +1,4 @@
+// 'use strict'
 // Example 1
 function showThis() {
     console.log(this);
@@ -10,22 +11,25 @@ const obj = {
     }
 }
 
+obj.showThis = showThis
+// obj.showThis() // obj
+// showThis() // window
 
 // Example 2
-const name = 'Vasya';
+const name1 = 'Vasya';
 
 function test() {
-    console.log(this.name);
+    console.log(this.name1);
 }
 
-// test();
+// test(); // undefined
 
 
 // Example 3
 const object = {
     message: 'Hello, World!',
     getMessage() {
-      message = 'Test';
+      message = 'Test'; // так не делать!
       return this.message;
     }
   };
@@ -69,7 +73,7 @@ let user = makeUser();
 function Person(name) {
     this.name = name;
 
-    this.showName = function() {
+    this.showName = () => {
         console.log(this.name)
     }
 }

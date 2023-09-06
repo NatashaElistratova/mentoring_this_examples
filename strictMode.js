@@ -1,11 +1,13 @@
-// 'use strict';
+'use strict';
 
 function func(isEmpty, text) {
     let message = 'Test'
 
     if (!isEmpty) {
-        message = text
+        message = text;
     }
+    return this
 }
 
-func(false, 'Message')
+console.log(func(false, 'Message'))
+
